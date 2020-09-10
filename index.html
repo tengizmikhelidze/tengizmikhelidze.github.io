@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Idea Inc</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a2280a7181.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="main">
+        <div class="left-column">
+            <div class="texts">
+                <h1>Front-end Developer</h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eligendi, natus deleniti eos maxime possimus nesciunt reiciendis
+                    rem nam ad ipsum molestias facere? Veritatis, maxime? Qui temporibus
+                    iusto deserunt similique dolor?
+
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eligendi, natus deleniti eos maxime possimus nesciunt reiciendis
+                    rem nam ad ipsum molestias facere? Veritatis, maxime? Qui temporibus
+                    iusto deserunt similique dolor?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eligendi, natus deleniti eos maxime possimus nesciunt reiciendis
+                    rem nam ad ipsum molestias facere? Veritatis, maxime? Qui temporibus
+                    iusto deserunt similique dolor?
+                </p>
+            </div>
+        </div>
+        <div class="background">
+            <img class="profile-img" src="images/profile.jpg" alt="Cover image">
+        </div>
+        <div class="nav">
+            <i class="fas fa-bars"></i>
+            <div class="nav-links">
+                <a href="#" id="active" onclick="activeNav(this)">Main</a>
+            </div>
+            <div class="nav-links">
+                <a href="#" onclick="activeNav(this)">Portfolio</a>
+            </div>
+            <div class="nav-links">
+                <a href="#" onclick="activeNav(this)">About Us</a>
+            </div>
+            <div class="nav-links contact">
+                <a href="#" onclick="activeNav(this)">Contact</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-input" class="search-inp">
+            </div>
+            <i class="fas fa-search" onclick="searchAnim()"></i>
+            <div class="nav-links language">
+                <p>EN</p>
+                <select name="language" id="language">
+                    <option value=""></option>
+                    <option value="en">EN</option>
+                    <option value="rus">RUS</option>
+                    <option value="ge">GE</option>
+                </select>
+            </div>
+        </div>
+        <div class="title">
+            <div class="block1"></div>
+            <p>Tengiz Mikhelidze</p>
+        </div>
+        <div class="role">
+            <div class="block2"></div>
+            <p>Front-end Developer</p>
+        </div>
+    </div>
+    <div class="portfolio">
+        <div class="portfolio-wrap">
+            <div class="portfolio-title">
+                <p class="text-center">There are my projects <hr class="hr1"></p> 
+            </div>
+            <div class="projects">
+                <div class="project project1">
+                    <a href="">
+                        <div class="project-img">
+                            <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
+                                alt="Tribute Page">
+                        </div>
+                        <div class="project-img-text">
+                            <p>Tribute Page</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project project2">
+                    <a href="">
+                        <div class="project-img">
+                            <img src="https://github.com/lengi21/photos/blob/master/georgianbuus.PNG?raw=true"
+                                alt="Bus Page">
+                        </div>
+                        <div class="project-img-text">
+                            <p>Prices Page</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project project3">
+                    <a href="">
+                        <div class="project-img">
+                            <img src="https://github.com/lengi21/photos/blob/master/ds.png?raw=true"
+                                alt="building page">
+                        </div>
+                        <div class="project-img-text">
+                            <p>Builder Page</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project project4">
+                    <a href="">
+                        <div class="project-img">
+                            <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png"
+                                alt="">
+                        </div>
+                        <div class="project-img-text">
+                            <p>Search Page</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project project5">
+                    <a href="">
+                        <div class="project-img">
+                            <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png"
+                                alt="">
+                        </div>
+                        <div class="project-img-text">
+                            <p>Tic-Tac-Toe Page</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project project6">
+                    <a href="">
+                        <div class="project-img">
+                            <img src="https://github.com/lengi21/photos/blob/master/survey.PNG?raw=true"
+                                alt="survey page">
+                        </div>
+                        <div class="project-img-text">
+                            <p>survey Page</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
