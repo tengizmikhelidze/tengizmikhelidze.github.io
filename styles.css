@@ -77,53 +77,6 @@ body{
 #active{
     color: #303841;
 }
-.search-bar{
-    width: 80px;
-}
-
-#search-input{
-    border: 0px;
-    border-radius: 50px;
-    outline: none;
-    height: 25px;
-    color: #303841;
-    width: 0;
-    visibility: hidden;
-}
-#searchAnim{
-    border: 0px;
-    border-radius: 50px;
-    outline: none;
-    height: 25px;
-    color: #be3144;
-    width: 0;
-    animation:searchAnimation 1s ease-in-out forwards;
-}
-#stopAnim{
-    border: 0px;
-    border-radius: 50px;
-    outline: none;
-    height: 25px;
-    color: #be3144;
-    width: 0;
-    animation:stopAnimation 1s ease-in-out forwards;
-}
-@keyframes stopAnimation{
-    0% {
-        width: 140px;
-    }
-    100% {
-        width: 0px;
-    }
-}
-@keyframes searchAnimation{
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 140px;
-    }
-}
 .language {
     display: flex;
     justify-content: center;

@@ -1,0 +1,24 @@
+@media all and (max-width: 1440px) {
+    .projects{
+        grid-template-columns: auto;
+        
+    }
+    .nav-links a{
+        font-size: 15px;
+        letter-spacing: 1px;
+        
+    }
+    .search-bar{
+        width: 80px;
+    }
+}
+@media all and (max-width: 1000px){
+    .nav-links{
+        display: none;
+    }
+}
+@media all and (max-width:1400px){
+    .search-bar{
+        width: 100px;
+    }
+}
