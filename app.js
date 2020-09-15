@@ -5,6 +5,10 @@ function activeNav(e){
         document.getElementById('active').id='';
         e.id='active';
     }
+    if(e.id!='activege') {
+        document.getElementById('activege').id='';
+        e.id='activege';
+    }
 }
 
 function searchAnim(){
@@ -17,4 +21,16 @@ function searchAnim(){
     } else {
         e[0].id = 'stopAnim'
     }
+}
+
+function nameChange(e){
+    if(e=="ge"){
+        document.getElementById('english').style.display='none';
+        document.getElementById('georgian').style.display='initial';
+    }
+    if(e=="en"){
+        document.getElementById('english').style.display='initial';
+        document.getElementById('georgian').style.display='none'; 
+    }
+    
 }
