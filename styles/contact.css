@@ -1,0 +1,53 @@
+.contact-wrapper{
+    background-color: #434242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-content{
+    max-width: 1280px;
+    padding: 40px 180px;
+}
+
+.contact-skills-title, .contact-skills-score{
+    color: #b4b3b3;
+    font-size: 15px;
+    text-align: right;
+    transition: 0.7s;
+}
+.contact-skills-score{
+    margin-left: 20px;
+}
+.skills a{
+    text-decoration: none;
+}
+.contact-skills-title i, .contact-skills-score i{
+    font-size:30px;
+    align-self: center;
+}
+.contact-skills{
+    grid-gap: 100px;
+}
+.skills .contact-ul li{
+    display: flex;
+    justify-content: left;
+    margin: 20px 0;
+    position: relative;
+}
+.contact-ul li a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.skills .contact-ul li:hover .contact-skills-title{
+    color: #ffffff;
+}
+.skills .contact-ul li:hover{
+    background-color: unset;
+}
+.skills .contact-ul li:hover .contact-skills-score{
+    color: #ffffff;
+}

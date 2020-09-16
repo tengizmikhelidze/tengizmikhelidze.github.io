@@ -5,723 +5,451 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tengiz Mikhelidze</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a2280a7181.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
-    <script src="app.js"></script>
-    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/alk-life/css/alk-life.min.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="styles/profile.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <script src="sticky.js"></script>
+    <link rel="stylesheet" href="styles/projects.css">
+    <script src="figcap.js"></script>
+    <script src="/activenav.js"></script>
+    <link rel="stylesheet" href="styles/ablities.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v8.0" nonce="TtT76jR0"></script> 
 </head>
 
 <body>
-    <div id="english">
-        <div class="main">
-            <div class="left-column">
-                <div class="texts">
-                    <h1>Front-end Developer</h1>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Eligendi, natus deleniti eos maxime possimus nesciunt reiciendis
-                        rem nam ad ipsum molestias facere? Veritatis, maxime? Qui temporibus
-                        iusto deserunt similique dolor?
-
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Eligendi, natus deleniti eos maxime possimus nesciunt reiciendis
-                        rem nam ad ipsum molestias facere? Veritatis, maxime? Qui temporibus
-                        iusto deserunt similique dolor?
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Eligendi, natus deleniti eos maxime possimus nesciunt reiciendis
-                        rem nam ad ipsum molestias facere? Veritatis, maxime? Qui temporibus
-                        iusto deserunt similique dolor?
-                    </p>
+    <div class="whole-wrapper">
+        <header>
+            <div class="header-content">
+                <h1>Tengiz Mikhelidze</h1>
+                <p>Interactive Resume</p>
+            </div>
+            <div class="overlay"></div>
+            <div class="scroll-down">
+                <a href="#profile"> <i class="fas fa-angle-down"></i> </a>
+            </div>
+        </header>
+        <div class="profile-wrapper" id="profile">
+            <div class="nav-bar-wrapper">
+                <div class="nav-bar-content">
+                    <div class="nav-links">
+                        <div class="nav-link nav1" id="activenav" onclick="navActive(this)">
+                            <a href="#profile">Profile</a>
+                        </div>
+                        <div class="nav-link nav2" onclick="navActive(this)">
+                            <a href="#projects-wrapper">Projects</a>
+                        </div>
+                        <div class="nav-link nav3" onclick="navActive(this)">
+                            <a href="#abilities">Abilities</a>
+                        </div>
+                        <div class="nav-link nav4" onclick="navActive(this)">
+                            <a href="#contact">Contact</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="background">
-                <img class="profile-img" src="images/profile.jpg" alt="Cover image">
-            </div>
-            <div class="nav">
-                <i class="fas fa-bars"></i>
-                <div class="nav-links">
-                    <a href="#" id="activege" onclick="activeNav(this)">Main</a>
+            <div class="profile-content">
+                <h1 class="profh1">Profile</h1>
+                <p class="profp">I'm creative Front-end Developer</p>
+                <hr class="profhr">
+                <div class="about-me">
+                    <div class="about left">
+                        <h1 id="aboutlefth1">About me</h1>
+                        <p>
+                            I am an allround web developer.
+                            I am a senior programmer with good knowledge of
+                            front-end techniques. I love structure and order and
+                            I also stand for quality. I love spending time on
+                            fixing little details and optimizing web apps.
+                            Also I like working in a team, you'll learn
+                            faster and much more. As the saying goes:
+                            'two heads are better than one'.
+                        </p>
+                    </div>
+                    <div class="about center">
+                        <img src="images/profile.jpg" alt="Profile Image">
+                    </div>
+                    <div class="about right">
+                        <h1 id="aboutrighth3">Details</h1>
+                        <div class="about-right-p">
+                            <p>
+                                <strong>Name:</strong> <br>
+                                Tengiz Mikhelidze
+                            </p>
+                            <p>
+                                <strong style>Age:</strong> <br>
+                                19 years <br>
+                            </p>
+                            <p>
+                                <strong>Location:</strong> <br>
+                                Georgia, Tbilisi
+                            </p>
+                        </div>
+                        <button class="instagram">
+                            <i class="fab fa-instagram"></i>
+                            Follow
+                        </button>
+                    </div>
+                    <div class="buy-bear">
+                        <p>
+                            Got inspired? Copied the theme? Or do you
+                            just like the website? No problem, just buy
+                            me a beer and make me happy!
+                        </p>
+                    </div>
                 </div>
-                <div class="nav-links">
-                    <a href="#portfolio" onclick="activeNav(this)">Portfolio</a>
+                <div class="donate">
+                    <button class="donatebtn"><strong>Donate</strong></button>
                 </div>
-                <div class="nav-links">
-                    <a href="#aboutme" onclick="activeNav(this)">About Me</a>
-                </div>
-                <div class="nav-links contact">
-                    <a href="#contact" onclick="activeNav(this)">Contact</a>
-                </div>
-                <div class="language">
-                    <p onclick="nameChange('en')">EN</p>
-                    <p onclick="nameChange('ge')">GE</p>
-                    <p onclick="nameChange('ru')">RUS</p>
-                </div>
-            </div>
-            <div class="title">
-                <div class="block1"></div>
-                <p>Tengiz Mikhelidze</p>
-            </div>
-            <div class="role">
-                <div class="block2"></div>
-                <p>Front-end Developer</p>
-            </div>
-            <div class="custom-shape-divider-bottom-1600071666">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
-                    <path
-                        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-                        opacity=".25" class="shape-fill"></path>
-                    <path
-                        d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-                        opacity=".5" class="shape-fill"></path>
-                    <path
-                        d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-                        class="shape-fill"></path>
-                </svg>
             </div>
         </div>
-        <div class="portfolio" id="portfolio">
-            <div class="portfolio-wrap">
-                <div class="portfolio-title">
-                    <p>There are my projects</p>
-                </div>
+        <div class="projects-wrapper" id="projects-wrapper">
+            <div class="projects-content">
+                <h1 class="profh1">Projects</h1>
+                <p class="profp">“Don’t wish it were easier. Wish you were better.” <br> - Jim Rohn
+                </p>
+                <hr class="profhrc">
                 <div class="projects">
-                    <div class="project project1">
-                        <a href="">
-                            <div class="project-img">
-                                <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
-                                    alt="Tribute Page">
-                            </div>
-                            <div class="project-img-text">
-                                <p>Tribute Page</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="project project2">
-                        <a href="">
-                            <div class="project-img">
-                                <img src="https://github.com/lengi21/photos/blob/master/georgianbuus.PNG?raw=true"
-                                    alt="Bus Page">
-                            </div>
-                            <div class="project-img-text">
-                                <p>Prices Page</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="project project3">
-                        <a href="">
-                            <div class="project-img">
-                                <img src="https://github.com/lengi21/photos/blob/master/ds.png?raw=true"
-                                    alt="building page">
-                            </div>
-                            <div class="project-img-text">
-                                <p>Builder Page</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="project project4">
-                        <a href="">
-                            <div class="project-img">
-                                <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png"
-                                    alt="">
-                            </div>
-                            <div class="project-img-text">
-                                <p>Search Page</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="project project5">
-                        <a href="">
-                            <div class="project-img">
-                                <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png"
-                                    alt="">
-                            </div>
-                            <div class="project-img-text">
-                                <p>Tic-Tac-Toe Page</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="project project6">
-                        <a href="">
-                            <div class="project-img">
-                                <img src="https://github.com/lengi21/photos/blob/master/survey.PNG?raw=true"
-                                    alt="survey page">
-                            </div>
-                            <div class="project-img-text">
-                                <p>survey Page</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="show-all">
-                    <div class="text">
-                        <a href="">
-                            <p>Show All <i class="fas fa-external-link-alt"></i></p>
-                        </a>
-                    </div>
+                    <figure class="project" onmouseover="figAnim(this)" onmouseout="figAnimStop(this)">
+                        <img src="/images/prices.png" alt="">
+                        <figcaption class="">
+                            <h3>GeorgianBus</h3>
+                            <p>Cheap Travel Around Georgia</p>
+                            <p>https://tengizmikhelidze.github.io/georgianbus/</p>
+                            <a href="https://tengizmikhelidze.github.io/georgianbus/" target="_blank"></a>
+                            <i class="far fa-eye"></i>
+                        </figcaption>
+                    </figure>
+                    <figure class="project" onmouseover="figAnim(this)" onmouseout="figAnimStop(this)">
+                        <img src="/images/cv1.png" alt="">
+                        <figcaption class="">
+                            <h3>Old Portfolio</h3>
+                            <p>Old personal portfolio</p>
+                            <p>https://tengizmikhelidze.github.io/</p>
+                            <a href="https://tengizmikhelidze.github.io/" target="_blank"></i></a>
+                            <i class="far fa-eye"></i>
+                        </figcaption>
+                    </figure>
+                    <figure class="project" onmouseover="figAnim(this)" onmouseout="figAnimStop(this)">
+                        <img src="/images/builder.png" alt="">
+                        <figcaption class="">
+                            <h3>Builders</h3>
+                            <p>Building company website</p>
+                            <p>https://tengizmikhelidze.github.io/building-company/</p>
+                            <a href="https://tengizmikhelidze.github.io/building-company/" target="_blank"></i></a>
+                            <i class="far fa-eye"></i>
+                        </figcaption>
+                    </figure>
+                    <figure class="project" onmouseover="figAnim(this)" onmouseout="figAnimStop(this)">
+                        <img src="/images/survey.png" alt="">
+                        <figcaption class="">
+                            <h3>Survey</h3>
+                            <p>Simple survey page</p>
+                            <p>https://tengizmikhelidze.github.io/survey-page/</p>
+                            <a href="https://tengizmikhelidze.github.io/survey-page/" target="_blank"></i></a>
+                            <i class="far fa-eye"></i>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </div>
-        <div class="tech-skills-wrapper" id="aboutme">
-            <div class="custom-shape-divider-top-1600071717">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
-                    <path
-                        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-                        opacity=".25" class="shape-fill"></path>
-                    <path
-                        d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-                        opacity=".5" class="shape-fill"></path>
-                    <path
-                        d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-                        class="shape-fill"></path>
-                </svg>
-            </div>
-            <div class="tech-skills-content">
-                <div class="tech-title">
-                    <h1 class="techh1">Abilities</h1>
-                    <p>
-                        “Life without knowledge is death in disguise.” <br>
-                        - Talib Kweli
-                    </p>
-                </div>
+        <div class="abilities-wrapper" id="abilities">
+            <div class="abilities-content">
+                <h1 class="profh1">Abilities</h1>
+                <p class="profp">“Don't wait. The time will never be just right.” <br> - Napoleon Hill</p>
+                <hr class="profhr">
+                <h3>Skills</h3>
                 <div class="skills">
-                    <div class="skill">
-                        <p>Skills</p>
-                        <span><i class="fab fa-html5"></i></span>
-                        <span class="html5 skill-text">HTML(5)</span>
-                        <span class="stars">
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                        </span>
+                    <div class="left-skills">
+                        <ul>
+                            <li>
+                                <span class="skills-title">HTML(5)</span>
+                                <span class="skills-score">
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="skills-title">CSS(3)</span>
+                                <span class="skills-score">
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="skills-title">JavaSscript</span>
+                                <span class="skills-score">
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #F3EFE0;" class="fas fa-star"></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="skills-title">Adobe Photoshop</span>
+                                <span class="skills-score">
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #F3EFE0;" class="fas fa-star"></i>
+                                </span>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="skill">
-                        <span><i class="fab fa-css3-alt"></i></span>
-                        <span class="skill-text css3">Css(3)</span>
-                        <span class="stars">
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                        </span>
-                    </div>
-                    <div class="skill">
-                        <span><i class="fab fa-js-square"></i></span>
-                        <span class="skill-text js">Javascript</span>
-                        <span class="stars">
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                        </span>
-                    </div>
-                    <div class="skill">
-                        <span><i class="fab fa-adobe"></i></span>
-                        <span class="skill-text photoshop">Adobe Photoshop</span>
-                        <span class="stars">
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                        </span>
-                    </div>
-                    <div class="skill">
-                        <span><i class="fab fa-js-square"></i></span>
-                        <span class="skill-text jq">jQuery</span>
-                        <span class="stars">
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                            <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                        </span>
-                    </div>
-                    <div class="skill">
-                        <span><i class="fab fa-react"></i></span>
-                        <span class="skill-text react">React</span>
-                        <span class="stars">
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                            <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                        </span>
-                    </div>
-                    <div class="skill">
-                        <span><i class="fab fa-bootstrap"></i></span>
-                        <span class="skill-text boot">bootstrap</span>
-                        <span class="stars">
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                            <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                            <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-                <div class="made-of">
-                    <p>This project is made with: HTML(5), CSS(5) and JavaScript</p>
-                    <div class="github-project">
-                        <a href="">See On Github</a>
+                    <div class="right-skills">
+                        <ul>
+                            <li>
+                                <span class="skills-title">React</span>
+                                <span class="skills-score">
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #F3EFE0;" class="fas fa-star"></i>
+                                    <i style="color: #F3EFE0;" class="fas fa-star"></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="skills-title">Jquery</span>
+                                <span class="skills-score">
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #F3EFE0;" class="fas fa-star"></i>
+                                    <i style="color: #F3EFE0;" class="fas fa-star"></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="skills-title">BootStrap</span>
+                                <span class="skills-score">
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #F3EFE0;" class="fas fa-star"></i>
+                                    <i style="color: #F3EFE0;" class="fas fa-star"></i>
+                                    <i style="color: #F3EFE0;" class="fas fa-star"></i>
+                                </span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="languages">
-                    <p>Languages</p>
-                    <div class="languages-stars">
-                        <div class="lan">
-                            <span> Georgian (native)</span>
-                            <span>
-                                <i style="color: #be3144;" class="fas fa-star"></i>
-                                <i style="color: #be3144;" class="fas fa-star"></i>
-                                <i style="color: #be3144;" class="fas fa-star"></i>
-                                <i style="color: #be3144;" class="fas fa-star"></i>
-                                <i style="color: #be3144;" class="fas fa-star"></i>
-                            </span>
-                        </div>
-                        <div class="lan">
-                            <span>English</span>
-                            <span>
-                                <i style="color: #be3144;" class="fas fa-star"></i>
-                                <i style="color: #be3144;" class="fas fa-star"></i>
-                                <i style="color: #be3144;" class="fas fa-star"></i>
-                                <i style="color: #be3144;" class="fas fa-star"></i>
-                                <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                            </span>
-                        </div>
-                        <div class="lan">
-                            <span>Russian</span>
-                            <span>
-                                <i style="color: #be3144;" class="fas fa-star"></i>
-                                <i style="color: #be3144;" class="fas fa-star"></i>
-                                <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                                <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                                <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                            </span>
-                        </div>
+                <hr class="profhr">
+                <h3>Languages</h3>
+                <div class="skills">
+                    <div class="left-skills">
+                        <ul>
+                            <li>
+                                <span class="skills-title">Georgian</span>
+                                <span class="skills-score">
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="skills-title">English</span>
+                                <span class="skills-score">
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #F3EFE0;" class="fas fa-star"></i>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-skills">
+                        <ul>
+                            <li>
+                                <span class="skills-title">Russian</span>
+                                <span class="skills-score">
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #F3EFE0;" class="fas fa-star"></i>
+                                    <i style="color: #F3EFE0;" class="fas fa-star"></i>
+                                    <i style="color: #F3EFE0;" class="fas fa-star"></i>
+                                    <i style="color: #F3EFE0;" class="fas fa-star"></i>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <hr class="profhr">
+                <h3>Personalities</h3>
+                <div class="skills">
+                    <div class="left-skills">
+                        <ul>
+                            <li>
+                                <span class="skills-title">Sociable</span>
+                                <span class="skills-score">
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="skills-title">hard working</span>
+                                <span class="skills-score">
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="skills-title">responsible</span>
+                                <span class="skills-score">
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="skills-title">creative</span>
+                                <span class="skills-score">
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-skills">
+                        <ul>
+                            <li>
+                                <span class="skills-title">Friendly</span>
+                                <span class="skills-score">
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="skills-title">Teamwork</span>
+                                <span class="skills-score">
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="skills-title">Positive</span>
+                                <span class="skills-score">
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                    <i style="color: #22A39F;" class="fas fa-star"></i>
+                                </span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="custom-shape-divider-bottom-1600074794">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
-                    <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
-                </svg>
             </div>
         </div>
         <div class="contact-wrapper" id="contact">
             <div class="contact-content">
-                <div class="contact-text">
-                    <h1>Contact Me</h1>
-                    <p>
-                        “If I had asked people what they wanted, they would have said faster horses. ” <br>
-                        - Henry Ford
-                    </p>
-                </div>
-                <div class="contact-links">
-                    <div class="icon">
-                        <a href="" class="fb">
-                            <i class="fab fa-facebook-square"></i>
-                            <p>Facebook</p>
-                        </a>
-                    </div>
-                    <div class="icon">
-                        <a href="" class="git">
-                            <i class="fab fa-github"></i>
-                            <p>GitHub</p>
-                        </a>
-                    </div>
-                    <div class="icon">
-                        <a href="images/tengiz-mikhelidze.pdf" download class="cv">
-                            <i class="fas fa-file"></i>
-                            <p>CV</p>
-                        </a>
-                    </div>
-                    <div class="icon">
-                        <a href="mailto:mixelidzet@gmail.com" class="mail">
-                            <i class="fas fa-at"></i>
-                            <p>Send Mail</p>
-                        </a>
-                    </div>
-                    <div class="icon">
-                        <a href="tel:+995555552250" class="mob">
-                            <i class="fas fa-mobile-alt"></i>
-                            <p>Call Me</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer>
-            <p>
-                &copy; All Right Reserved
-            </p>
-            <p>
-                &copy; Created By Tengiz Mikhelidze
-            </p>
-        </footer>
-    </div>
-    <div id="georgian">
-        <div class="main">
-            <div class="left-column">
-                <div class="texts">
-                    <h1>Front-end Developer</h1>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Eligendi, natus deleniti eos maxime possimus nesciunt reiciendis
-                        rem nam ad ipsum molestias facere? Veritatis, maxime? Qui temporibus
-                        iusto deserunt similique dolor?
+                <h1 class="conh1">Contact</h1>
+                <p class="conp">“If I had asked people what they wanted, they would have said faster horses. ”<br>
+                    - Henry Ford</p>
+                <hr class="conhr">
+                <div class="skills contact-skills">
+                    <div class="left-skills">
+                        <ul class="contact-ul">
+                            <li>
+                                <span class="skills-title contact-skills-title">
+                                    <i class="fab fa-instagram"></i>
+                                </span>
+                                <span class="skills-score contact-skills-score">
+                                    https://www.instagram.com/tengo.mikhelidze21/
+                                </span>
+                                <a href="https://www.instagram.com/tengo.mikhelidze21/" target="_blank"></a>
+                            </li>
+                            <li>
 
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Eligendi, natus deleniti eos maxime possimus nesciunt reiciendis
-                        rem nam ad ipsum molestias facere? Veritatis, maxime? Qui temporibus
-                        iusto deserunt similique dolor?
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Eligendi, natus deleniti eos maxime possimus nesciunt reiciendis
-                        rem nam ad ipsum molestias facere? Veritatis, maxime? Qui temporibus
-                        iusto deserunt similique dolor?
-                    </p>
-                </div>
-            </div>
-            <div class="background">
-                <img class="profile-img" src="images/profile.jpg" alt="Cover image">
-            </div>
-            <div class="nav">
-                <i class="fas fa-bars"></i>
-                <div class="nav-links">
-                    <a href="#" id="active" onclick="activeNav(this)">მთავარი</a>
-                </div>
-                <div class="nav-links">
-                    <a href="#portfolioge" onclick="activeNav(this)">პორტფოლიო</a>
-                </div>
-                <div class="nav-links">
-                    <a href="#aboutmege" onclick="activeNav(this)">ჩემს შესახებ</a>
-                </div>
-                <div class="nav-links contact">
-                    <a href="#contactge" onclick="activeNav(this)">კონტაქტი</a>
-                </div>
-                <div class="language">
-                    <p onclick="nameChange('en')">EN</p>
-                    <p onclick="nameChange('ge')">GE</p>
-                    <p onclick="nameChange('ru')">RUS</p>
-                </div>
-            </div>
-            <div class="title">
-                <div class="block1"></div>
-                <p>თენგიზ მიხელიძე</p>
-            </div>
-            <div class="role">
-                <div class="block2"></div>
-                <p>Front-end Developer</p>
-            </div>
-            <div class="custom-shape-divider-bottom-1600071666">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
-                    <path
-                        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-                        opacity=".25" class="shape-fill"></path>
-                    <path
-                        d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-                        opacity=".5" class="shape-fill"></path>
-                    <path
-                        d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-                        class="shape-fill"></path>
-                </svg>
-            </div>
-        </div>
-        <div class="portfolio" id="portfolioge">
-            <div class="portfolio-wrap">
-                <div class="portfolio-title">
-                    <p>ჩემი პროექტები</p>
-                </div>
-                <div class="projects">
-                    <div class="project project1">
-                        <a href="">
-                            <div class="project-img">
-                                <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
-                                    alt="Tribute Page">
-                            </div>
-                            <div class="project-img-text">
-                                <p>Tribute Page</p>
-                            </div>
-                        </a>
+                                <span class="skills-title contact-skills-title">
+                                    <i class="fab fa-facebook-square"></i>
+                                </span>
+                                <span class="skills-score contact-skills-score">
+                                    https://www.facebook.com/
+                                </span>
+                                <a href="https://www.facebook.com/" target="_blank"></a>
+                            </li>
+                            <li>
+
+                                <span class="skills-title contact-skills-title">
+                                    <i class="fas fa-at"></i>
+                                </span>
+                                <span class="skills-score contact-skills-score">
+                                    mixelidzet@gmail.com
+                                </span>
+                                <a href="mailto:mixelidzet@gmail.com" target="_blank"></a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="project project2">
-                        <a href="">
-                            <div class="project-img">
-                                <img src="https://github.com/lengi21/photos/blob/master/georgianbuus.PNG?raw=true"
-                                    alt="Bus Page">
-                            </div>
-                            <div class="project-img-text">
-                                <p>Prices Page</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="project project3">
-                        <a href="">
-                            <div class="project-img">
-                                <img src="https://github.com/lengi21/photos/blob/master/ds.png?raw=true"
-                                    alt="building page">
-                            </div>
-                            <div class="project-img-text">
-                                <p>Builder Page</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="project project4">
-                        <a href="">
-                            <div class="project-img">
-                                <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png"
-                                    alt="">
-                            </div>
-                            <div class="project-img-text">
-                                <p>Search Page</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="project project5">
-                        <a href="">
-                            <div class="project-img">
-                                <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png"
-                                    alt="">
-                            </div>
-                            <div class="project-img-text">
-                                <p>Tic-Tac-Toe Page</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="project project6">
-                        <a href="">
-                            <div class="project-img">
-                                <img src="https://github.com/lengi21/photos/blob/master/survey.PNG?raw=true"
-                                    alt="survey page">
-                            </div>
-                            <div class="project-img-text">
-                                <p>survey Page</p>
-                            </div>
-                        </a>
+                    <div class="right-skills">
+                        <ul class="contact-ul">
+                            <li>
+
+                                <span class="skills-title contact-skills-title">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </span>
+                                <span class="skills-score contact-skills-score">
+                                    +995 555 55 22 50
+                                </span>
+                                <a href="tel:+995555552250" target="_blank"></a>
+                            </li>
+                            <li>
+
+                                <span class="skills-title contact-skills-title">
+                                    <i class="fab fa-linkedin"></i>
+                                </span>
+                                <span class="skills-score contact-skills-score">
+                                    Linked : url-shortened
+                                </span>
+                                <a href="https://www.linkedin.com/in/tengo-mixelidze-034252156/" target="_blank"></a>
+                            </li>
+                            <li>
+
+                                <span class="skills-title contact-skills-title">
+                                    <i class="fas fa-file"></i>
+                                </span>
+                                <span class="skills-score contact-skills-score">
+                                    Resume
+                                </span>
+                                <a href="/files/tengiz-mikhelidze.pdf" download="tengiz-mikhelidze.pdf"></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="show-all">
-                    <div class="text">
-                        <a href="">
-                            <p>მაჩვენე ყველა <i class="fas fa-external-link-alt"></i></p>
-                        </a>
-                    </div>
-                </div>
+                <hr class="conhr">
+                <div class="fb-like" data-href="https://www.facebook.com/techjobs.ge" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
             </div>
         </div>
-        <div class="tech-skills-wrapper" id="aboutmege">
-            <div class="custom-shape-divider-top-1600071717">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
-                    <path
-                        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-                        opacity=".25" class="shape-fill"></path>
-                    <path
-                        d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-                        opacity=".5" class="shape-fill"></path>
-                    <path
-                        d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-                        class="shape-fill"></path>
-                </svg>
-            </div>
-            <div class="tech-skills-content">
-                <div class="tech-title">
-                    <h1 class="techh1">შესაძლებლობები</h1>
-                    <p>
-                        “Life without knowledge is death in disguise.” <br>
-                        - Talib Kweli
-                    </p>
-                </div>
-                <div class="skills">
-                    <div class="skill">
-                        <p>სქილები</p>
-                        <span><i class="fab fa-html5"></i></span>
-                        <span class="html5 skill-text">HTML(5)</span>
-                        <span class="stars">
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                        </span>
-                    </div>
-                    <div class="skill">
-                        <span><i class="fab fa-css3-alt"></i></span>
-                        <span class="skill-text css3">Css(3)</span>
-                        <span class="stars">
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                        </span>
-                    </div>
-                    <div class="skill">
-                        <span><i class="fab fa-js-square"></i></span>
-                        <span class="skill-text js">Javascript</span>
-                        <span class="stars">
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                        </span>
-                    </div>
-                    <div class="skill">
-                        <span><i class="fab fa-adobe"></i></span>
-                        <span class="skill-text photoshop">Adobe Photoshop</span>
-                        <span class="stars">
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                        </span>
-                    </div>
-                    <div class="skill">
-                        <span><i class="fab fa-js-square"></i></span>
-                        <span class="skill-text jq">jQuery</span>
-                        <span class="stars">
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                            <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                        </span>
-                    </div>
-                    <div class="skill">
-                        <span><i class="fab fa-react"></i></span>
-                        <span class="skill-text react">React</span>
-                        <span class="stars">
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                            <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                        </span>
-                    </div>
-                    <div class="skill">
-                        <span><i class="fab fa-bootstrap"></i></span>
-                        <span class="skill-text boot">bootstrap</span>
-                        <span class="stars">
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #be3144;" class="fas fa-star"></i>
-                            <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                            <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                            <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-                <div class="made-of">
-                    <p>საიტი აწყობილია: HTML(5), CSS(5) and JavaScript</p>
-                    <div class="github-project">
-                        <a href="">ნახეთ Github-ზე</a>
-                    </div>
-                </div>
-                <div class="languages">
-                    <p>ენები</p>
-                    <div class="languages-stars">
-                        <div class="lan">
-                            <span> ქართული (მშობლიური)</span>
-                            <span>
-                                <i style="color: #be3144;" class="fas fa-star"></i>
-                                <i style="color: #be3144;" class="fas fa-star"></i>
-                                <i style="color: #be3144;" class="fas fa-star"></i>
-                                <i style="color: #be3144;" class="fas fa-star"></i>
-                                <i style="color: #be3144;" class="fas fa-star"></i>
-                            </span>
-                        </div>
-                        <div class="lan">
-                            <span>ინგლისური</span>
-                            <span>
-                                <i style="color: #be3144;" class="fas fa-star"></i>
-                                <i style="color: #be3144;" class="fas fa-star"></i>
-                                <i style="color: #be3144;" class="fas fa-star"></i>
-                                <i style="color: #be3144;" class="fas fa-star"></i>
-                                <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                            </span>
-                        </div>
-                        <div class="lan">
-                            <span>რუსული</span>
-                            <span>
-                                <i style="color: #be3144;" class="fas fa-star"></i>
-                                <i style="color: #be3144;" class="fas fa-star"></i>
-                                <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                                <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                                <i style="color: #cbcbcb;" class="fas fa-star"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="custom-shape-divider-bottom-1600074794">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
-                    <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
-                </svg>
-            </div>
-        </div>
-        <div class="contact-wrapper" id="contactge">
-            <div class="contact-content">
-                <div class="contact-text">
-                    <h1>კონტაქტი</h1>
-                    <p>
-                        “If I had asked people what they wanted, they would have said faster horses. ” <br>
-                        - Henry Ford
-                    </p>
-                </div>
-                <div class="contact-links">
-                    <div class="icon">
-                        <a href="" class="fb">
-                            <i class="fab fa-facebook-square"></i>
-                            <p>Facebook</p>
-                        </a>
-                    </div>
-                    <div class="icon">
-                        <a href="" class="git">
-                            <i class="fab fa-github"></i>
-                            <p>GitHub</p>
-                        </a>
-                    </div>
-                    <div class="icon">
-                        <a href="images/tengiz-mikhelidze.pdf" download class="cv">
-                            <i class="fas fa-file"></i>
-                            <p>CV</p>
-                        </a>
-                    </div>
-                    <div class="icon">
-                        <a href="mailto:mixelidzet@gmail.com" class="mail">
-                            <i class="fas fa-at"></i>
-                            <p>Send Mail</p>
-                        </a>
-                    </div>
-                    <div class="icon">
-                        <a href="tel:+995555552250" class="mob">
-                            <i class="fas fa-mobile-alt"></i>
-                            <p>Call Me</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer>
-            <p>
-                &copy; ყველა უფლება დაცულია
-            </p>
-            <p>
-                &copy; შექმნა თენგიზ მიხელიძემ
-            </p>
-        </footer>
-    </div>
 </body>
 
 </html>

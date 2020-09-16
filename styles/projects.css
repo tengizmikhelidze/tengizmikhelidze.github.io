@@ -1,0 +1,101 @@
+.projects-wrapper{
+    background-color: #F3EFE0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.projects-content{
+    max-width: 1280px;
+    padding: 40px 180px;
+}
+.project img{
+    width: 390px;
+    height: 286px;
+    margin-bottom: -5px;
+}
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 30px;
+}
+.project{
+    position: relative;
+}
+figcaption{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    opacity: 0;
+    /* transform: translateX(100%); */
+}
+.figcapAnim{
+    top: 100%;
+    animation-name: figcap;
+    animation-duration: 0.5s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.figcapAnimStop{
+    top: 0;
+    animation-name: figcapStop;
+    animation-duration: 0.3s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+figcaption i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    background-color: #428bca;
+    padding: 10px;
+}
+figcaption h3,p {
+    margin: 10px;
+    width: 90%;
+}
+figcaption h3{
+    border-bottom: 2px solid #fff;
+    
+}
+
+@keyframes figcap{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        background-color: rgba(34, 163, 159, 0.8);
+        top: 0;
+    }
+}
+@keyframes figcapStop{
+    0%{
+        opacity: 1;
+        top: 0;
+        background-color: rgba(34, 163, 159, 0.5);
+    }
+    100%{
+        opacity: 0;
+        top: 100%;
+        background-color: unset;
+    }
+}
+figcaption a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

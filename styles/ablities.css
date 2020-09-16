@@ -1,0 +1,48 @@
+.abilities-wrapper{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.abilities-content{
+    max-width: 1280px;
+    padding: 40px 180px;
+}
+.abilities-content h3{
+    margin-bottom: 30px;
+    color: #22A39F;
+    font-size: 28px;
+    font-weight: 300;
+}
+.skills{
+    width: 810px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-gap: 30px;
+}
+.skills ul {
+    list-style: none;
+}
+.skills ul li{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 10px 0; */
+    padding: 5px 0;
+}
+
+.left-skills, .right-skills{
+    width: 100%;
+}
+
+.skills-title{
+    text-transform: capitalize;
+}
+.skills ul li:hover {
+    background-color: #F2F2F2;
+}
+.skills-score i{
+    transition: 0.3s
+}
+.skills ul li:hover .skills-score i{
+        margin-left: 3px;
+}
