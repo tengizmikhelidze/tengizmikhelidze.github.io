@@ -61,7 +61,7 @@ figcaption i {
     background-color: #428bca;
     padding: 10px;
 }
-figcaption h3,p {
+figcaption h3, figcaption p {
     margin: 10px;
     width: 90%;
 }

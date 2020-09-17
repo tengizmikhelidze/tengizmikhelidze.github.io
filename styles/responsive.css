@@ -1,0 +1,108 @@
+@media all and (max-width:1280px){
+    .profile-content{
+        max-width: 70%;
+        padding: 40px 0px;
+    }
+    .projects-content{
+        max-width: 70%;
+        padding: 40px 0px;
+    }
+    .contact-content{
+        max-width: 70%;
+        padding: 40px 0px;
+    }
+    .abilities-content{
+        max-width: 70%;
+        padding: 40px 0px;
+    }
+    .projects{
+        width: 70%;
+    }
+    .skills{
+        width: 70%;
+        grid-template-columns: auto;
+    }
+    .contact-skills {
+        grid-gap: 0;
+    }
+    .project img{
+        width: 300px;
+        height: 200px;
+    }
+    .about-me{
+        grid-template-areas: unset;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+        justify-items: center;
+        width: 70%;
+    }
+    .left{
+        grid-area: unset;
+    }
+    .center{
+        grid-area: unset;
+    }
+    .right{
+        grid-area: unset;
+        margin-left: 20px;
+    }
+    .buy-bear{
+        grid-area: unset;
+    }
+    .left p, .about-right-p{
+        width: 250px;
+        margin-bottom: 10px;
+    }
+}
+@media all and (max-width:1275px){
+    .nav-bar-wrapper-fixed{
+        right: 2%;
+    }
+    .nav-bar-wrapper{
+        right: 2%;
+    }
+    .scroll-down{
+        right: 2%;
+    }
+}
+@media all and (max-width:995px){
+    .profile-content{
+        max-width: 390px;
+        padding: 40px 0px;
+    }
+    .projects-content{
+        max-width: 390px;
+    }
+    .contact-content{
+        max-width: 390px;
+    }
+    .abilities-content{
+        max-width: 390px;
+    }
+    .about-me{
+        grid-template-areas: unset;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        align-items: left;
+        justify-items: left;
+        width: 70%;
+    }
+    .left{
+        grid-area: unset;
+    }
+    .center{
+        grid-area: unset;
+    }
+    .right{
+        grid-area: unset;
+        margin-left: 20px;
+    }
+    .buy-bear{
+        grid-area: unset;
+    }
+    .left p, .about-right-p{
+        width: 250px;
+        margin-bottom: 10px;
+    }
+}
