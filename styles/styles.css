@@ -56,9 +56,3 @@ html {
     height: 0;
     box-sizing: content-box;
 }
-
-.fb-customerchat{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
