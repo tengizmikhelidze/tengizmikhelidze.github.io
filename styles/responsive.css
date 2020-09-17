@@ -55,6 +55,65 @@
         margin-bottom: 10px;
     }
 }
+@media all and (max-width: 1024px){
+    .contact-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .abilities-content{
+        max-width: 390px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .about-me{
+        grid-template-areas: unset;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        /* text-align: center; */
+    }
+    .left{
+        grid-area: unset;
+    }
+    .center{
+        grid-area: unset;
+    }
+    .right{
+        grid-area: unset;
+        margin-left: 20px;
+        text-align: center;
+    }
+    .buy-bear{
+        grid-area: unset;
+        text-align: center;
+    }
+    .left p, .about-right-p{
+        width: 250px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    #st-1{
+        text-align: center;
+    }
+    #aboutlefth1{
+        text-align: center;
+    }
+    .projects-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .projects{
+        grid-template-columns: 1fr;
+    }
+}
 @media all and (max-width:1275px){
     .nav-bar-wrapper-fixed{
         right: 2%;
@@ -80,29 +139,47 @@
     .abilities-content{
         max-width: 390px;
     }
-    .about-me{
-        grid-template-areas: unset;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        align-items: left;
-        justify-items: left;
-        width: 70%;
+
+}
+@media all and (max-width: 640px){
+    .scroll-down{
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        height: 50px;
     }
-    .left{
-        grid-area: unset;
+    .nav-bar-wrapper{
+        width: 100%;
+        height: auto;
+        right: 0;
     }
-    .center{
-        grid-area: unset;
+    .nav-bar-wrapper-fixed{
+        top: 0;
+        transform: translateY(0);
+        right: 0;
     }
-    .right{
-        grid-area: unset;
-        margin-left: 20px;
+    .nav-links{
+        height: 160px;
+        display: none;
     }
-    .buy-bear{
-        grid-area: unset;
+    .hamburger-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
-    .left p, .about-right-p{
+    .hamburger-menu i {
+        font-size: 30px;
+        color: #ffffff;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .project img{
         width: 250px;
-        margin-bottom: 10px;
+        height: 150px;
+    }
+    figcaption{
+        width: 250px;
     }
 }

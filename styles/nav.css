@@ -1,4 +1,3 @@
-
 .nav-bar-wrapper{
     position: absolute;
     background-color: #222222;
@@ -23,14 +22,18 @@
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .nav-links{
+    position: relative;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     align-items: center;
     width: 100%;
     height: 100%;
-    
+    z-index: 4;
+    transition: 1s;
 }
 .nav-link a{
     text-decoration: none;
@@ -57,4 +60,7 @@ background-color: #22A39F;
 }
 .nav-link:hover a{
     color: #999999;
+}
+.hamburger-menu{
+    display: none;
 }
